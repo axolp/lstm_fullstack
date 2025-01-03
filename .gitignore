@@ -1,0 +1,90 @@
+# --- Python/Django ---
+
+# Ignorowanie plików kompilowanych Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Wirtualne środowisko (venv, env)
+env/
+venv/
+
+# Pliki konfiguracyjne i zależności
+*.env
+*.venv
+Pipfile
+Pipfile.lock
+poetry.lock
+pyvenv.cfg
+
+# Ignorowanie bazy danych SQLite (jeśli używana)
+*.sqlite3
+*.db
+
+# Pliki migracji Django (opcjonalnie, jeśli chcesz je wersjonować, usuń tę linię)
+migrations/**/__pycache__/
+migrations/*.pyc
+migrations/*.pyo
+
+# Pliki cache Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.DS_Store
+
+# --- Vue.js ---
+
+# Node modules (zależności npm/yarn)
+node_modules/
+
+# Pliki budowania aplikacji Vue.js
+dist/
+build/
+
+# Logi i raporty błędów
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Pliki konfiguracyjne zależne od środowiska
+*.local
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorowanie plików edytora
+.idea/
+.vscode/
+*.sublime-workspace
+
+# --- Docker (jeśli używasz) ---
+docker-compose.override.yml
+*.dockerfile
+.dockerignore
+
+# --- VS Code & IDE ---
+.vscode/
+*.code-workspace
+
+# --- Systemowe ---
+.DS_Store
+Thumbs.db
+
+# --- Testy ---
+coverage/
+pytest_cache/
+__snapshots__/
+junit.xml
+
+# --- Lintowanie i formatowanie ---
+.eslintcache
+.prettier/
+.prettiercache
